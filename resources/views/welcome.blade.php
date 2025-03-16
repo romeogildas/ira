@@ -1,11 +1,56 @@
 @extends('layouts.site.app')
 
 @section('title')
-  <title> Accueil </title>
+  <title> Promo Fruits Bénin | Accueil </title>
 @endsection('title')
 
 @section('styles')
   <style>
+    .mission-vision-content p {
+            display: inline;
+        }
+        .read-more-btn {
+            color: blue;
+            cursor: pointer;
+            text-decoration: underline;
+            margin-left: 5px;
+        }
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+            border-radius: 5px;
+            z-index: 1000;
+            width: 80%;
+            max-width: 500px;
+        }
+        .popup h3 {
+            margin-top: 0;
+        }
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+        .close-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            float: right;
+            border-radius: 3px;
+        }
   </style>
 @endsection('styles')
 
@@ -20,7 +65,7 @@
                     <div class="hero-slide">
                         <!-- Slider Image Start -->
                         <div class="hero-slider-image">
-                            <img src="images/hero-bg.jpg" alt="">
+                            <img src="images/home1.jpeg" alt="">
                         </div>
                         <!-- Slider Image End -->
 
@@ -31,9 +76,8 @@
                                     <div class="hero-content">
                                         <!-- Section Title Start -->
                                         <div class="section-title">
-                                            <h3 class="wow fadeInUp">welcome our charity</h3>
-                                            <h1 class="text-anime-style-2" data-cursor="-opaque"><span>Empower change</span>, one act of kindness at a time</h1>
-                                            <p class="wow fadeInUp" data-wow-delay="0.2s">Join us in creating brighter futures by providing hope, delivering help, and fostering lasting change for communities in need around the world.</p>
+                                            <h1 class="text-anime-style-2" data-cursor="-opaque">Bienvenue chez <span>Promo Fruits Bénin</span></h1>
+                                            <p class="wow fadeInUp" data-wow-delay="0.2s">Votre référence en jus 100% naturel, pressé avec soin pour une explosion de saveurs et de bienfaits pour votre santé.</p>
                                         </div>
                                         <!-- Section Title End -->
                 
@@ -41,36 +85,11 @@
                                         <div class="hero-body wow fadeInUp" data-wow-delay="0.4s">
                                             <!-- Hero Button Start -->
                                             <div class="hero-btn">
-                                                <a href="donation.html" class="btn-default">donate now</a>
+                                                <a href="/contact" class="btn-default">rejoignez-nous</a>
                                             </div>
                                             <!-- Hero Button End -->
-                
-                                            <!-- Video Play Button Start -->
-                                            <div class="video-play-button">
-                                                <p>play video</p>
-                                                <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video" data-cursor-text="Play">
-                                                    <i class="fa-solid fa-play"></i>
-                                                </a>
-                                            </div>
-                                            <!-- Video Play Button End -->
                                         </div>
                                         <!-- Hero Content Body End -->  
-                                        
-                                        <!-- Hero Footer Start -->
-                                        <div class="hero-footer wow fadeInUp" data-wow-delay="0.6s">
-                                            <div class="hero-list">
-                                                <ul>
-                                                    <li>Education and Skill Development</li>
-                                                    <li>Women and Youth Empowerment</li>
-                                                </ul>
-                                            </div>
-                
-                                            <div class="hero-help-families">
-                                                <h3>help lorem families</h3>
-                                                <p>Your gift of $235 can feed 40 children</p>
-                                            </div>
-                                        </div>
-                                        <!-- Hero Footer End -->
                                     </div>
                                     <!-- Hero Content End -->
                                 </div>
@@ -85,7 +104,7 @@
                     <div class="hero-slide">
                         <!-- Slider Image Start -->
                         <div class="hero-slider-image">
-                            <img src="images/hero-bg-2.jpg" alt="">
+                            <img src="images/home2.jpeg" alt="">
                         </div>
                         <!-- Slider Image End -->
 
@@ -96,9 +115,8 @@
                                     <div class="hero-content">
                                         <!-- Section Title Start -->
                                         <div class="section-title">
-                                            <h3 class="wow fadeInUp">welcome our charity</h3>
-                                            <h1 class="text-anime-style-2" data-cursor="-opaque"><span>Empower change</span>, one act of kindness at a time</h1>
-                                            <p class="wow fadeInUp" data-wow-delay="0.2s">Join us in creating brighter futures by providing hope, delivering help, and fostering lasting change for communities in need around the world.</p>
+                                            <h1 class="text-anime-style-2" data-cursor="-opaque">Chez <span>Promo Fruits Bénin</span></h1>
+                                            <p class="wow fadeInUp" data-wow-delay="0.2s">Nos jus sont sans additifs ni conservateurs, préparés avec des ananas soigneusement sélectionnés pour vous offrir une expérience saine et rafraîchissante à chaque gorgée. Fraîcheur garantie !</p>
                                         </div>
                                         <!-- Section Title End -->
                 
@@ -106,36 +124,12 @@
                                         <div class="hero-body wow fadeInUp" data-wow-delay="0.4s">
                                             <!-- Hero Button Start -->
                                             <div class="hero-btn">
-                                                <a href="donation.html" class="btn-default">donate now</a>
+                                                <a href="/contact" class="btn-default">rejoignez-nous</a>
                                             </div>
                                             <!-- Hero Button End -->
-                
-                                            <!-- Video Play Button Start -->
-                                            <div class="video-play-button">
-                                                <p>play video</p>
-                                                <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video" data-cursor-text="Play">
-                                                    <i class="fa-solid fa-play"></i>
-                                                </a>
-                                            </div>
-                                            <!-- Video Play Button End -->
                                         </div>
                                         <!-- Hero Content Body End -->  
                                         
-                                        <!-- Hero Footer Start -->
-                                        <div class="hero-footer wow fadeInUp" data-wow-delay="0.6s">
-                                            <div class="hero-list">
-                                                <ul>
-                                                    <li>Education and Skill Development</li>
-                                                    <li>Women and Youth Empowerment</li>
-                                                </ul>
-                                            </div>
-                
-                                            <div class="hero-help-families">
-                                                <h3>help lorem families</h3>
-                                                <p>Your gift of $235 can feed 40 children</p>
-                                            </div>
-                                        </div>
-                                        <!-- Hero Footer End -->
                                     </div>
                                     <!-- Hero Content End -->
                                 </div>
@@ -150,353 +144,98 @@
     </div>
     <!-- Hero Section End -->
 
-    <!-- About Us Section Start -->
-    <div class="about-us">
+    <!-- Our Approah Section Start -->
+    <div class="our-approach">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <!-- About Us Images Start -->
-                    <div class="about-us-images">
-                        <!-- About Image 1 Start -->
-                        <div class="about-img-1">
-                            <figure class="image-anime">
-                                <img src="images/about-img-1.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- About Image 1 End -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Our Approach Box Content Start -->
+                    <div class="our-approach-box-content">
+                        <!-- Our Approach Content Start -->
+                        <div class="our-approach-content">
+                            <!-- Section Title Start -->
+                            <div class="section-title">
+                                <h2 class="text-anime-style-2" data-cursor="-opaque">Un mot du Directeur Général</h2>
+                                <p class="wow fadeInUp" data-wow-delay="0.2s">Bienvenue dans l’avenir que nous travaillons à bâtir ensemble avec nos partenaires agriculteurs. Notre dynamique dans l’univers Promo Fruits est de faire de chaque producteur travaillant fidèlement avec nous, un agriculteur qui vit pleinement de ses efforts.</p>
+                            </div>
+                            <!-- Section Title End -->
 
-                        <!-- About Image 2 Start -->
-                        <div class="about-img-2">
-                            <figure class="image-anime">
-                                <img src="images/about-img-2.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- About Image 2 End -->
+                            <!-- Our Approach Button Start -->
+                            <div class="our-approach-btn wow fadeInUp" data-wow-delay="0.4s">
+                                <a href="/about" class="btn-default">Lire plus</a>
+                            </div>
+                            <!-- Our Approach Button End -->
 
-                        <!-- Need Fund Box Start -->
-                        <div class="need-fund-box">
-                            <img src="images/icon-funded-dollar.svg" alt="">
-                            <p>We've funded <span class="counter">75</span>k Dollars</p>
-                        </div>
-                        <!-- Need Fund Box End -->
-                    </div>
-                    <!-- About Us Images End -->
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- About Us Content Start -->
-                    <div class="about-us-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">about us</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">United in compassion, changing lives</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Driven by compassion and a shared vision, we work hand-in-hand with communities to create meaningful change.</p>
-                        </div>
-                        <!-- Section Title End -->
-
-                        <!-- About Body Start -->
-                        <div class="about-us-body">
-                            <div class="about-us-body-content">
-                                <!-- About Support Box Start -->
-                                <div class="about-support-box wow fadeInUp" data-wow-delay="0.4s">
+                            <!-- Mission Vision Box Start -->
+                            <div class="mission-vision-box wow fadeInUp" data-wow-delay="0.6s">
+                                <!-- Mission Start -->
+                                <div class="mission-vision-item">
                                     <div class="icon-box">
-                                        <img src="images/icon-about-support.svg" alt="">
+                                        <img src="images/icon-our-mission.svg" alt="">
                                     </div>
-                                    <!-- About Support Content Start -->
-                                    <div class="about-support-content">
-                                        <h3>Healthcare Support</h3>
-                                        <p>Providing essential healthcare services and resources to communities.</p>
+
+                                    <div class="mission-vision-content">
+                                        <h3>Notre mission</h3>
+                                        <p id="short-mission"></p>
+                                        <span class="readmore-btn" onclick="showPopup('mission')">Lire plus</span>
                                     </div>
-                                    <!-- About Support Content End -->
                                 </div>
-                                <!-- About Support Box End -->
-                                
-                                <!-- About Button Start -->
-                                <div class="about-btn wow fadeInUp" data-wow-delay="0.6s">
-                                    <a href="about.html" class="btn-default">about us</a>
+                                <!-- Mission End -->
+
+                                <!-- Vision Start -->
+                                <div class="mission-vision-item">
+                                    <div class="icon-box">
+                                        <img src="images/icon-our-vision.svg" alt="">
+                                    </div>
+
+                                    <div class="mission-vision-content">
+                                        <h3>Notre vision</h3>
+                                        <p id="short-vision"></p>
+                                        <span class="readmore-btn" onclick="showPopup('vision')">Lire plus</span>
+                                    </div>
                                 </div>
-                                <!-- About Button End -->
+                                <!-- Vision End -->
+
+                                <!-- Valeurs Start -->
+                                <div class="mission-vision-item">
+                                    <div class="icon-box">
+                                        <img src="images/icon-our-value.svg" alt="">
+                                    </div>
+
+                                    <div class="mission-vision-content">
+                                        <h3>Nos valeurs</h3>
+                                        <p id="short-values"></p>
+                                        <span class="readmore-btn" onclick="showPopup('values')">Lire plus</span>
+                                    </div>
+                                </div>
+                                <!-- Valeurs End -->
                             </div>
 
-                            <!-- Helped Fund Item Start -->
-                            <div class="helped-fund-item">
-                                <div class="helped-fund-img">
-                                    <figure class="image-anime">
-                                        <img src="images/helped-fund-img.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="helped-fund-content">
-                                    <h2><span class="counter">75,958</span></h2>
-                                    <h3>helped fund</h3>
-                                    <p>Supporting growth through community- funding.</p>
-                                </div>
+                            <!-- Popup Section -->
+                            <div class="popup-overlay" id="popup-overlay"></div>
+                            <div class="popup" id="popup">
+                                <button class="close-btn" onclick="closePopup()">X</button>
+                                <h3 id="popup-title"></h3>
+                                <p id="popup-text"></p>
                             </div>
-                            <!-- Helped Fund Item End -->
+                            <!-- Mission Vision Box End -->
                         </div>
-                        <!-- About Body End -->
+                        <!-- Our Approach Content End -->
+
+                        <!-- Our Approach Image Start -->
+                        <div class="our-approach-image">
+                            <figure class="image-anime">
+                                <img src="images/mission.jpeg" alt="">
+                            </figure>
+                        </div>
+                        <!-- Our Approach Image End -->
                     </div>
-                    <!-- About Us Content End -->
+                    <!-- Our Approach Box Content End -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- About Us Section End -->
-
-    <!-- Our Services Section Start -->
-    <div class="our-services">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">services</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Our comprehensive services</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s">Our services are focused on creating lasting change through community development, healthcare access, educational support, and emergency relief.</p>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <!-- Services Item Start -->
-                    <div class="service-item wow fadeInUp">
-                        <div class="service-content">
-                            <h3><a href="service-single.html">food security initiatives</a></h3>
-                            <p>Addressing hunger and malnutrition by providing nutritious meals</p>
-                        </div>
-                        <div class="service-image">
-                            <figure class="image-anime">
-                                <img src="images/services-image-1.jpg" alt="">
-                            </figure>
-                        </div>
-                        <div class="service-btn">
-                            <a href="service-single.html" class="readmore-btn">read more</a>
-                        </div>
-                    </div>
-                    <!-- Services Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Services Item Start -->
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="service-content">
-                            <h3><a href="service-single.html">healthcare access</a></h3>
-                            <p>Addressing hunger and malnutrition by providing nutritious meals</p>
-                        </div>
-                        <div class="service-image">
-                            <figure class="image-anime">
-                                <img src="images/services-image-2.jpg" alt="">
-                            </figure>
-                        </div>
-                        <div class="service-btn">
-                            <a href="service-single.html" class="readmore-btn">read more</a>
-                        </div>
-                    </div>
-                    <!-- Services Item End -->
-                </div>
-
-                <div class="col-lg-4 col-md-6">
-                    <!-- Services Item Start -->
-                    <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="service-content">
-                            <h3><a href="service-single.html">educational support</a></h3>
-                            <p>Addressing hunger and malnutrition by providing nutritious meals</p>
-                        </div>
-                        <div class="service-image">
-                            <figure class="image-anime">
-                                <img src="images/services-image-3.jpg" alt="">
-                            </figure>
-                        </div>
-                        <div class="service-btn">
-                            <a href="service-single.html" class="readmore-btn">read more</a>
-                        </div>
-                    </div>
-                    <!-- Services Item End -->
-                </div>
-
-                <div class="col-lg-12">
-                    <!-- Service Contact Text Start -->
-                    <div class="section-footer-text wow fadeInUp" data-wow-delay="0.6s">
-                        <p>You will be satisfy with our work. Contact us today <a href="tel:+91123456789">(+91) 123 456 789</a></p>
-                    </div>
-                    <!-- Service Contact Text End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Services Section End -->
-
-    <!-- What We Do Section Start -->
-    <div class="what-we-do">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <!-- What We Do Content Start -->
-                    <div class="what-we-do-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">what we do</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Building hope creating lasting change</h2>
-                        </div>
-                        <!-- Section Title End -->
-
-                        <!-- what We List Start -->
-                        <div class="what-we-list">
-                            <!-- What We Item Start -->
-                            <div class="what-we-item wow fadeInUp" data-wow-delay="0.2s">
-                                <div class="icon-box">
-                                    <img src="images/icon-what-we-1.svg" alt="">
-                                </div>
-                                <div class="what-we-item-content">
-                                    <h3>economic empowerment</h3>
-                                    <p>Empowering individuals through job training, financial literacy, and small business support to create sustainable livelihoods.</p>
-                                </div>
-                            </div>
-                            <!-- What We Item End -->
-
-                            <!-- What We Item Start -->
-                            <div class="what-we-item wow fadeInUp" data-wow-delay="0.4s">
-                                <div class="icon-box">
-                                    <img src="images/icon-what-we-2.svg" alt="">
-                                </div>
-                                <div class="what-we-item-content">
-                                    <h3>clean water and sanitation</h3>
-                                    <p>Empowering individuals through job training, financial literacy, and small business support to create sustainable livelihoods.</p>
-                                </div>
-                            </div>
-                            <!-- What We Item End -->
-
-                            <!-- What We Item Start -->
-                            <div class="what-we-item wow fadeInUp" data-wow-delay="0.6s">
-                                <div class="icon-box">
-                                    <img src="images/icon-what-we-3.svg" alt="">
-                                </div>
-                                <div class="what-we-item-content">
-                                    <h3>economic empowerment</h3>
-                                    <p>Empowering individuals through job training, financial literacy, and small business support to create sustainable livelihoods.</p>
-                                </div>
-                            </div>
-                            <!-- What We Item End -->
-                        </div>
-                        <!-- what We List End -->
-                    </div>
-                    <!-- What We Do Content End -->
-                </div>
-                <div class="col-lg-6">
-                    <!-- What We Do Images Start -->
-                    <div class="what-we-do-images">
-                        <!-- What We Do Image 1 Start -->
-                        <div class="what-we-do-img-1">
-                            <figure class="image-anime reveal">
-                                <img src="images/what-we-do-image-1.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- What We Do Image 1 End -->
-
-                        <!-- What We Do Image 2 Start -->
-                        <div class="what-we-do-img-2">
-                            <figure class="image-anime">
-                                <img src="images/what-we-do-image-2.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- What We Do Image 2 End -->
-
-                        <!-- Donate Now Box Start -->
-                        <div class="donate-now-box">
-                            <a href="donation.html"><img src="images/icon-donate-now.svg" alt="">donate now</a>
-                        </div>
-                        <!-- Donate Now Box End -->
-                    </div>
-                    <!-- What We Do Images End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- What We Do Section End -->
-
-    <!-- Our Causes Section Start -->
-   <div class="our-causes">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">our causes</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Supporting communities causes</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s">We focus on impactful causes that address urgent community needs, from healthcare and education to food security and for lasting change.</p>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <!-- Causes Item Start -->
-                    <div class="causes-item wow fadeInUp">
-                        <div class="causes-image">
-                            <figure class="image-anime">
-                                <img src="images/causes-img-1.jpg" alt="">
-                            </figure>
-                        </div>
-                        <div class="causes-body">
-                            <div class="causes-content">
-                                <h3>Healthcare access</h3>
-                                <p>Ensuring quality education and resources for underserved communitie.</p>
-                            </div>
-                            <div class="causes-button">
-                                <a href="donation.html" class="btn-default">donate now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Causes Item End -->
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <!-- Causes Item Start -->
-                    <div class="causes-item wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="causes-image">
-                            <figure class="image-anime">
-                                <img src="images/causes-img-2.jpg" alt="">
-                            </figure>
-                        </div>
-                        <div class="causes-body">
-                            <div class="causes-content">
-                                <h3>Education for all</h3>
-                                <p>Ensuring quality education and resources for underserved communitie.</p>
-                            </div>
-                            <div class="causes-button">
-                                <a href="donation.html" class="btn-default">donate now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Causes Item End -->
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <!-- Causes Item Start -->
-                    <div class="causes-item wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="causes-image">
-                            <figure class="image-anime">
-                                <img src="images/causes-img-3.jpg" alt="">
-                            </figure>
-                        </div>
-                        <div class="causes-body">
-                            <div class="causes-content">
-                                <h3>Hunger and food security</h3>
-                                <p>Ensuring quality education and resources for underserved communitie.</p>
-                            </div>
-                            <div class="causes-button">
-                                <a href="donation.html" class="btn-default">donate now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Causes Item End -->
-                </div>
-            </div>
-        </div>
-   </div>
-   <!-- Our Causes Section End -->
+    <!-- Our Approah Section End -->
     
    <!-- Why Choose Us Section Start -->
    <div class="why-choose-us">
@@ -573,103 +312,6 @@
    </div>
    <!-- Why Choose Us Section End -->
 
-   <!-- Our Program Section Start -->
-   <div class="our-program">
-        <div class="container">
-            <div class="row section-row align-items-center">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">our program</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Empowering our programs</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s">Our programs are designed to create sustainable change by addressing community needs, empowering individuals, long-term development through education.</p>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <!-- Program Item Start -->
-                    <div class="program-item wow fadeInUp">
-                        <div class="program-image">
-                            <a href="program-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/program-1.jpg" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="program-body">
-                            <div class="program-content">
-                                <h3><a href="program-single.html">Women's empowerment</a></h3>
-                                <p>Providing resources, education, and advocacy for women's rights.</p>
-                            </div>
-                            <div class="program-button">
-                                <a href="program-single.html" class="readmore-btn">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Program Item End -->                    
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <!-- Program Item Start -->
-                    <div class="program-item wow fadeInUp" data-wow-delay="0.2s">
-                        <div class="program-image">
-                            <a href="program-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/program-2.jpg" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="program-body">
-                            <div class="program-content">
-                                <h3><a href="program-single.html">Housing assistance</a></h3>
-                                <p>Providing resources, education, and advocacy for women's rights.</p>
-                            </div>
-                            <div class="program-button">
-                                <a href="program-single.html" class="readmore-btn">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Program Item End -->                    
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                    <!-- Program Item Start -->
-                    <div class="program-item wow fadeInUp" data-wow-delay="0.4s">
-                        <div class="program-image">
-                            <a href="program-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/program-3.jpg" alt="">
-                                </figure>
-                            </a>
-                        </div>
-                        <div class="program-body">
-                            <div class="program-content">
-                                <h3><a href="program-single.html">Development and Job Training</a></h3>
-                                <p>Providing resources, education, and advocacy for women's rights.</p>
-                            </div>
-                            <div class="program-button">
-                                <a href="program-single.html" class="readmore-btn">read more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Program Item End -->                    
-                </div>
-
-                <div class="col-lg-12">
-                    <!-- Service Contact Text Start -->
-                    <div class="section-footer-text wow fadeInUp" data-wow-delay="0.6s">
-                        <p>Your monthly <a href="#">gift of $36</a> ensures that kids living in poverty have access to life - changing benefits</p>
-                    </div>
-                    <!-- Service Contact Text End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Program Section End -->
-
     <!-- Scrolling Ticker Start -->
     <div class="scrolling-ticker">
         <div class="scrolling-ticker-box">
@@ -694,371 +336,6 @@
     </div>
 	<!-- Scrolling Ticker End -->
 
-    <!-- Our Features Section Start -->
-    <div class="our-features">
-        <div class="container">
-            <div class="row section-row">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">our feature</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Highlights our impactful work</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s">Discover the positive change we've created through our programs, partnerships, and dedicated efforts. From healthcare and education to environmental sustainability.</p>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Our Features List Start -->
-                    <div class="our-features-list">
-                        <!-- Our Features Item Start -->
-                        <div class="our-features-item">
-                            <!-- Our Features Image Start -->
-                            <div class="our-features-image">
-                                <figure class="image-anime reveal">
-                                    <img src="images/our-features-img-1.jpg" alt="">
-                                </figure>
-                            </div>
-                            <!-- Our Features Image End -->
-
-                            <!-- Our Features Content Start -->
-                            <div class="our-features-content">
-                                <div class="our-features-body">
-                                    <h2><span class="counter">96</span>%</h2>
-                                    <h3>healthcare support</h3>
-                                    <p>Provide essential healthcare services and resources to communities.</p>
-                                </div>
-                                <div class="icon-box">
-                                    <img src="images/icon-our-features-1.svg" alt="">
-                                </div>
-                            </div>
-                            <!-- Our Features Content End -->
-                        </div>
-                        <!-- Our Features Item End -->
-
-                        <!-- Our Features Item Start -->
-                        <div class="our-features-item">
-                            <!-- Our Features Image Start -->
-                            <div class="our-features-image">
-                                <figure class="image-anime reveal">
-                                    <img src="images/our-features-img-2.jpg" alt="">
-                                </figure>
-                            </div>
-                            <!-- Our Features Image End -->
-
-                            <!-- Our Features Content Start -->
-                            <div class="our-features-content">
-                                <div class="our-features-body">
-                                    <h2><span class="counter">94</span>%</h2>
-                                    <h3>education support</h3>
-                                    <p>Provide essential healthcare services and resources to communities.</p>
-                                </div>
-                                <div class="icon-box">
-                                    <img src="images/icon-our-features-2.svg" alt="">
-                                </div>
-                            </div>
-                            <!-- Our Features Content End -->
-                        </div>
-                        <!-- Our Features Item End -->
-
-                        <!-- Our Features Item Start -->
-                        <div class="our-features-item">
-                            <!-- Our Features Image Start -->
-                            <div class="our-features-image">
-                                <figure class="image-anime reveal">
-                                    <img src="images/our-features-img-3.jpg" alt="">
-                                </figure>
-                            </div>
-                            <!-- Our Features Image End -->
-
-                            <!-- Our Features Content Start -->
-                            <div class="our-features-content">
-                                <div class="our-features-body">
-                                    <h2><span class="counter">95</span>%</h2>
-                                    <h3>food support</h3>
-                                    <p>Provide essential healthcare services and resources to communities.</p>
-                                </div>
-                                <div class="icon-box">
-                                    <img src="images/icon-our-features-3.svg" alt="">
-                                </div>
-                            </div>
-                            <!-- Our Features Content End -->
-                        </div>
-                        <!-- Our Features Item End -->
-                    </div>
-                    <!-- Our Features List End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Features Section End -->
-
-    <!-- Donate Now Section Start -->
-    <div class="donate-now parallaxie">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="intro-video-box">
-                        <!-- Video Play Button Start -->
-                        <div class="video-play-button">
-                            <a href="https://www.youtube.com/watch?v=Y-x0efG1seA" class="popup-video" data-cursor-text="Play">
-                                <i class="fa-solid fa-play"></i>
-                            </a>
-                        </div>
-                        <!-- Video Play Button End -->
-
-                        <!-- Company Success Slider Start -->
-                        <div class="donar-company-slider">
-                            <div class="swiper">
-                                <div class="swiper-wrapper" data-cursor-text="Drag">
-                                    <!-- Client Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="donar-company-logo">
-                                            <img src="images/donar-company-logo-1.png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Client Logo End -->
-
-                                    <!-- Client Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="donar-company-logo">
-                                            <img src="images/donar-company-logo-2.png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Client Logo End -->
-
-                                    <!-- Client Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="donar-company-logo">
-                                            <img src="images/donar-company-logo-3.png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Client Logo End -->
-                                    
-                                    <!-- Client Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="donar-company-logo">
-                                            <img src="images/donar-company-logo-1.png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Client Logo End -->
-                                    
-                                    <!-- Client Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="donar-company-logo">
-                                            <img src="images/donar-company-logo-2.png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Client Logo End -->
-
-                                    <!-- Client Logo Start -->
-                                    <div class="swiper-slide">
-                                        <div class="donar-company-logo">
-                                            <img src="images/donar-company-logo-3.png" alt="">
-                                        </div>
-                                    </div>
-                                    <!-- Client Logo End -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Company Success Slider End -->
-                    </div>
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- Donate Box Start -->
-                    <div class="donate-box">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">donate now</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Donate us</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Your generous support enables to continue its mission of spreading God's love and serving our community.</p>
-                        </div>
-                        <!-- Section Title End -->
-
-                        <div class="donate-form wow fadeInUp" data-wow-delay="0.4s">
-                            <form id="donateForm" action="#" method="POST">
-                                <div class="form-group mb-4">
-                                    <input type="text" name="text" class="form-control" placeholder="$ 100.00" required>
-                                </div>
-
-                                <fieldset class="donate-value-box">                                  
-                                    <div class="donate-value">
-                                        <input type="radio" id="value1" name="value" value="value1" checked>
-                                        <label for="value1">$ 100.00</label>
-                                      </div>
-                                    
-                                      <div class="donate-value">
-                                        <input type="radio" id="value2" name="value" value="value2">
-                                        <label for="value2">$ 200.00</label>
-                                      </div>
-                                    
-                                      <div class="donate-value">
-                                        <input type="radio" id="value3" name="value" value="value3">
-                                        <label for="value3">$ 300.00</label>
-                                      </div>
-                                      
-                                      <div class="donate-value">
-                                          <input type="radio" id="value4" name="value" value="value4">
-                                          <label for="value4">$ 400.00</label>
-                                      </div>
-                                      
-                                      <div class="donate-value">
-                                          <input type="radio" id="value5" name="value" value="value5">
-                                          <label for="value5">$ 500.00</label>
-                                      </div>
-                                      
-                                      <div class="donate-value">
-                                          <input type="radio" id="value6" name="value" value="value6">
-                                          <label for="value6">$ 600.00</label>
-                                      </div>
-                                </fieldset>
-
-                                <div class="form-group-btn">
-                                    <button type="submit" class="btn-default">donate now</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- Donate Box End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Donate Now Section End -->
-
-    <!-- How It Work Section Start -->
-    <div class="how-it-work">
-        <div class="container">
-            <div class="row section-row">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">How it work</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Step by step working process</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s">Our step-by-step process ensures meaningful change: identifying community needs, designing tailored programs, implementing sustainable solutions.</p>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- How It Work List Start -->
-                    <div class="how-it-work-list">
-                        <!-- How It Work Item Start -->
-                        <div class="how-it-work-item">
-                            <!-- How It Work Image Start -->
-                            <div class="how-it-work-image">
-                                <figure class="image-anime reveal">
-                                    <img src="images/how-it-work-img-1.jpg" alt="">
-                                </figure>
-                            </div>
-                            <!-- How It Work Image End -->
-
-                            <!-- How It Work Content Start -->
-                            <div class="how-it-work-content wow fadeInUp" data-wow-delay="0.4s">
-                                <div class="icon-box">
-                                    <img src="images/icon-how-it-work-1.svg" alt="">
-                                </div>
-                                <div class="how-it-work-body">
-                                    <h3>healthcare support</h3>
-                                    <p>Provide essential healthcare service and resources to communities.</p>
-                                </div>
-                            </div>
-                            <!-- How It Work Content End -->
-                        </div>
-                        <!-- How It Work Item End -->
-
-                        <!-- How It Work Item Start -->
-                        <div class="how-it-work-item">
-                            <!-- How It Work Image Start -->
-                            <div class="how-it-work-image">
-                                <figure class="image-anime reveal">
-                                    <img src="images/how-it-work-img-2.jpg" alt="">
-                                </figure>
-                            </div>
-                            <!-- How It Work Image End -->
-
-                            <!-- How It Work Content Start -->
-                            <div class="how-it-work-content wow fadeInUp" data-wow-delay="0.4s">
-                                <div class="icon-box">
-                                    <img src="images/icon-how-it-work-2.svg" alt="">
-                                </div>
-                                <div class="how-it-work-body">
-                                    <h3>Plan and design</h3>
-                                    <p>Provide essential healthcare service and resources to communities.</p>
-                                </div>
-                            </div>
-                            <!-- How It Work Content End -->
-                        </div>
-                        <!-- How It Work Item End -->
-
-                        <!-- How It Work Item Start -->
-                        <div class="how-it-work-item">
-                            <!-- How It Work Image Start -->
-                            <div class="how-it-work-image">
-                                <figure class="image-anime reveal">
-                                    <img src="images/how-it-work-img-3.jpg" alt="">
-                                </figure>
-                            </div>
-                            <!-- How It Work Image End -->
-
-                            <!-- How It Work Content Start -->
-                            <div class="how-it-work-content wow fadeInUp" data-wow-delay="0.6s">
-                                <div class="icon-box">
-                                    <img src="images/icon-how-it-work-3.svg" alt="">
-                                </div>
-                                <div class="how-it-work-body">
-                                    <h3>Implement solutions</h3>
-                                    <p>Provide essential healthcare service and resources to communities.</p>
-                                </div>
-                            </div>
-                            <!-- How It Work Content End -->
-                        </div>
-                        <!-- How It Work Item End -->
-                        
-                        <!-- How It Work Item Start -->
-                        <div class="how-it-work-item">
-                            <!-- How It Work Image Start -->
-                            <div class="how-it-work-image">
-                                <figure class="image-anime reveal">
-                                    <img src="images/how-it-work-img-4.jpg" alt="">
-                                </figure>
-                            </div>
-                            <!-- How It Work Image End -->
-
-                            <!-- How It Work Content Start -->
-                            <div class="how-it-work-content wow fadeInUp" data-wow-delay="0.6s">
-                                <div class="icon-box">
-                                    <img src="images/icon-how-it-work-4.svg" alt="">
-                                </div>
-                                <div class="how-it-work-body">
-                                    <h3>Report and share</h3>
-                                    <p>Provide essential healthcare service and resources to communities.</p>
-                                </div>
-                            </div>
-                            <!-- How It Work Content End -->
-                        </div>
-                        <!-- How It Work Item End -->
-                    </div>
-                    <!-- How It Work List End -->
-                </div>
-                
-                <div class="col-lg-12">
-                    <!-- Service Contact Text Start -->
-                    <div class="section-footer-text how-work-footer-text wow fadeInUp" data-wow-delay="0.8s">
-                        <p><span>$250</span> Help Our Kids with Education, Food, Health Support. <a href="donation.html">Donate now</a></p>
-                    </div>
-                    <!-- Service Contact Text End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- How It Work Section End -->
-
     <!-- Our Testimonials Section Start -->
     <div class="our-testimonials">
         <div class="container">
@@ -1068,14 +345,8 @@
                     <div class="testimonials-image">
                         <div class="testimonials-img">
                             <figure class="image-anime reveal">
-                                <img src="images/testimonials-image.jpg" alt="">
+                                <img src="images/temoignage.jpeg" alt="">
                             </figure>
-                        </div>
-
-                        <div class="helthcare-support-circle">
-                            <a href="contact.html">
-                                <img src="images/healthcare-support-circle.svg" alt="">
-                            </a>
                         </div>
 
                         <div class="client-review-box">
@@ -1253,127 +524,50 @@
     </div>
     <!-- Our Testimonials Section End -->
 
-    <!-- Our Gallery Section Start -->
-    <div class="our-gallery">
-        <div class="container-fluid">
-            <div class="row section-row no-gutters">
-                <div class="col-lg-12">
-                    <!-- Section Title Start -->
-                    <div class="section-title">
-                        <h3 class="wow fadeInUp">gallery</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Our image gallery</h2>
-                    </div>
-                    <!-- Section Title End -->
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- Our Gallery Nav start -->
-                    <div class="our-gallery-nav wow fadeInUp" data-wow-delay="0.2s">
-                        <ul>
-                            <li><a href="#" class="active-btn" data-filter="*">all</a></li>
-                            <li><a href="#" data-filter=".health">health</a></li>
-                            <li><a href="#" data-filter=".education">education</a></li>
-                            <li><a href="#" data-filter=".food">food</a></li>
-                        </ul>
-                    </div>
-                    <!-- Our Gallery Nav End -->
-                </div>
-
-                <div class="col-lg-12">
-                    <!-- Gallery Item Boxes Start -->
-                    <div class="gallery-item-boxes">
-                        <!-- Gallery Item Box Start -->
-                        <div class="gallery-item-box health food">
-                            <figure class="image-anime">
-                                <img src="images/gallery-1.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- Gallery Item Box End -->
-                        
-                        <!-- Gallery Item Box Start -->
-                        <div class="gallery-item-box food">
-                            <figure class="image-anime">
-                                <img src="images/gallery-2.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- Gallery Item Box End -->
-                        
-                        <!-- Gallery Item Box Start -->
-                        <div class="gallery-item-box food education">
-                            <figure class="image-anime">
-                                <img src="images/gallery-3.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- Gallery Item Box End -->
-                        
-                        <!-- Gallery Item Box Start -->
-                        <div class="gallery-item-box health education">
-                            <figure class="image-anime">
-                                <img src="images/gallery-4.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- Gallery Item Box End -->
-                        
-                        <!-- Gallery Item Box Start -->
-                        <div class="gallery-item-box health">
-                            <figure class="image-anime">
-                                <img src="images/gallery-5.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- Gallery Item Box End -->
-                        
-                        <!-- Gallery Item Box Start -->
-                        <div class="gallery-item-box food education">
-                            <figure class="image-anime">
-                                <img src="images/gallery-6.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- Gallery Item Box End -->
-                        
-                        <!-- Gallery Item Box Start -->
-                        <div class="gallery-item-box health">
-                            <figure class="image-anime">
-                                <img src="images/gallery-7.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- Gallery Item Box End -->
-                        
-                        <!-- Gallery Item Box Start -->
-                        <div class="gallery-item-box food">
-                            <figure class="image-anime">
-                                <img src="images/gallery-8.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- Gallery Item Box End -->
-                        
-                        <!-- Gallery Item Box Start -->
-                        <div class="gallery-item-box education">
-                            <figure class="image-anime">
-                                <img src="images/gallery-9.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- Gallery Item Box End -->
-                        
-                        <!-- Gallery Item Box Start -->
-                        <div class="gallery-item-box health education">
-                            <figure class="image-anime">
-                                <img src="images/gallery-10.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- Gallery Item Box End -->
-                    </div>
-                    <!-- Gallery Item Boxes End -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Our Gallery Section End -->
-
 @endsection('content')
 
 @section('scripts')
-  <script>
-  </script>
+<script>
+    const content = {
+        mission: "Promo Fruits s'est donné comme mission de créer un marché d'écoulement rémunérateur pour chaque type de fruit à travers la transformation à grande échelle. Par ailleurs, nous articulons nos efforts pour l'optimisation des rendements à l'hectare afin d'améliorer le revenu des petits producteurs. Pour chaque consommateur de nos produits, nous garantissons un produit sans additif chimique issu d'une agriculture plus saine et durable pour un bien-être parfait.",
+        
+        vision: "Notre vision est de devenir un acteur incontournable dans la valorisation des fruits locaux en Afrique, en offrant des produits sains et naturels à grande échelle. Nous aspirons à un monde où chaque fruit cultivé trouve sa place dans une chaîne de transformation durable, réduisant ainsi le gaspillage et améliorant les conditions de vie des producteurs.",
+        
+        values: "Chez Promo Fruits, nous nous engageons à respecter des valeurs fondamentales : la qualité, l’innovation, l’intégrité et le respect de l’environnement. Nous croyons en une production responsable, en une relation de confiance avec nos partenaires et en une alimentation saine et accessible à tous."
+    };
+
+    function getShortText(text, limit) {
+        // Supprimer la ponctuation et les espaces pour le comptage
+        let cleanText = text.replace(/[^a-zA-ZÀ-ÿ]/g, ""); 
+        let count = 0, result = "";
+
+        for (let char of text) {
+            if (/[a-zA-ZÀ-ÿ]/.test(char)) count++; // Compter uniquement les lettres
+            result += char;
+            if (count >= limit) break;
+        }
+
+        return result + "...";
+    }
+
+    document.getElementById("short-mission").innerText = getShortText(content.mission, 40);
+    document.getElementById("short-vision").innerText = getShortText(content.vision, 40);
+    document.getElementById("short-values").innerText = getShortText(content.values, 40);
+
+    function showPopup(section) {
+        document.getElementById("popup-title").innerText = 
+            section === "mission" ? "Notre mission" :
+            section === "vision" ? "Notre vision" : "Nos valeurs";
+            
+        document.getElementById("popup-text").innerText = content[section];
+        document.getElementById("popup").style.display = "block";
+        document.getElementById("popup-overlay").style.display = "block";
+    }
+
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("popup-overlay").style.display = "none";
+    }
+</script>
+
 @endsection('scripts')

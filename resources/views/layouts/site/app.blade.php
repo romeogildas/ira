@@ -36,25 +36,17 @@
     </head>
     <body>
 
-        <!-- <div id="main-wrapper"> -->
 
-            <!--====== Start Header ======-->
-            @include('layouts.site.header')
-            <!--====== End Header ======-->
+        <!--====== Start Header ======-->
+        @include('layouts.site.header')
+        <!--====== End Header ======-->
 
+        @yield('content')
 
-            @yield('content')
+        <!--====== Start Footer ======-->
+        @include('layouts.site.footer')
+        <!--====== End Footer ======-->
 
-            <!--====== Start Footer ======-->
-            @include('layouts.site.footer')
-
-            <!--====== End Footer ======-->
-
-
-            <!--====== back-to-top ======-->
-            <a href="#" class="back-to-top"><i class="fas fa-angle-up"></i></a>
-
-       <!--  <div> -->
 
         <script src="{!!asset('/js/jquery-3.7.1.min.js')!!}"></script>
         <script src="{!!asset('/js/bootstrap.min.js')!!}"></script>

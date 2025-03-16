@@ -48,10 +48,10 @@
 /************************************/	
 
 :root{
-	--primary-color			: #020D19;
+	--primary-color			: #4CAF50;
 	--secondary-color		: #F8F8F8;
 	--text-color			: #828282;
-	--accent-color			: #FF6D00;
+	--accent-color			: #FBC02D;
 	--white-color			: #FFFFFF;
 	--divider-color			: #020D1914;
 	--dark-divider-color	: #FFFFFF1A;
@@ -404,22 +404,7 @@ body{
 	letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--primary-color);
-	padding-left: 34px;
     margin-bottom: 15px;
-}
-
-.section-title h3::before{
-	content: '';
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    background: url('../images/icon-sub-heading.svg');
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: cover;
-    width: 20px;
-    height: 20px;
 }
 
 .section-title h1{
@@ -1457,7 +1442,7 @@ header.main-header .header-sticky.active{
 /************************************/
 
 .our-causes{
-	background: url(../images/our-service-bg.svg), var(--secondary-color);
+	background: var(--secondary-color);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 100% auto;
@@ -2757,7 +2742,7 @@ header.main-header .header-sticky.active{
 
 .page-header{
     position: relative;
-	background: url('../images/page-header-bg.jpg');
+	background: url('../images/banner.jpeg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
