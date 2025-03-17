@@ -5,33 +5,45 @@
 @endsection('title')
 
 @section('styles')
-  <style>
-    .mission-vision-content p {
+    <style>
+        .mission-vision-content p {
             display: inline;
         }
+
         .read-more-btn {
-            color: blue;
+            color: #e67e22; 
             cursor: pointer;
             text-decoration: underline;
             margin-left: 5px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
         }
+
+        .read-more-btn:hover {
+            color: #d35400; 
+        }
+
         .popup {
             display: none;
             position: fixed;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-            background: white;
+            background: #fffaf0; 
             padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
-            border-radius: 5px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
             z-index: 1000;
-            width: 80%;
+            width: 90%;
             max-width: 500px;
+            text-align: center;
         }
+
         .popup h3 {
             margin-top: 0;
+            color: #27ae60; 
         }
+
         .popup-overlay {
             display: none;
             position: fixed;
@@ -39,19 +51,26 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(0, 0, 0, 0.4); 
             z-index: 999;
         }
+
         .close-btn {
-            background: red;
+            background: #2ecc71; 
             color: white;
             border: none;
-            padding: 5px 10px;
+            padding: 8px 12px;
             cursor: pointer;
-            float: right;
-            border-radius: 3px;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out;
         }
-  </style>
+
+        .close-btn:hover {
+            background: #27ae60; 
+        }
+
+    </style>
 @endsection('styles')
 
 @section('content')
@@ -238,7 +257,7 @@
     <!-- Our Approah Section End -->
     
    <!-- Why Choose Us Section Start -->
-   <div class="why-choose-us">
+    <div class="why-choose-us">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -246,12 +265,12 @@
                     <div class="why-choose-images">
                         <div class="why-choose-image-1">
                             <figure class="image-anime">
-                                <img src="images/why-choose-img-1.jpg" alt="">
+                                <img src="images/ira ananas mangue.webp" alt="Promo Fruits Bénin" />
                             </figure>
                         </div>
                         <div class="why-choose-image-2">
                             <figure class="image-anime">
-                                <img src="images/why-choose-img-2.jpg" alt="">
+                                <img src="images/12.jpeg" alt="Ananas et Mangue" />
                             </figure>
                         </div>
                     </div>
@@ -263,19 +282,19 @@
                     <div class="why-choose-content">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp">why choose us</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">Why we stand out together</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Our dedication, transparency, and community-driven approach set us apart. partnering with us,programs that create meaningful change.</p>
+                            <h3 class="wow fadeInUp">Pourquoi choisir Promo Fruits Bénin</h3>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">Des fruits frais et de qualité, directement du producteur à votre table</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Chez Promo Fruits Bénin, nous mettons un point d'honneur à fournir des fruits frais et savoureux tout en garantissant la qualité et l'authenticité. Grâce à notre approche directe avec les producteurs locaux, nous vous offrons des prix compétitifs et un service rapide.</p>
                         </div>
                         <!-- Section Title End -->
 
                         <!-- Why Choose List Start -->
                         <div class="why-choose-list wow fadeInUp" data-wow-delay="0.4s">
                             <ul>
-                                <li>community-centered approach</li>
-                                <li>transparency and accountability</li>
-                                <li>empowerment through partner</li>
-                                <li>volunteer and donor engagement</li>
+                                <li>Fruits frais et locaux</li>
+                                <li>Livraison rapide et fiable</li>
+                                <li>Prix compétitifs et abordables</li>
+                                <li>Engagement envers la qualité</li>
                             </ul>
                         </div>
                         <!-- Why Choose List End -->
@@ -284,22 +303,22 @@
                         <div class="why-choose-counters">
                             <!-- Why Choose Counters Item Start -->
                             <div class="why-choose-counter-item">
-                                <h2><span class="counter">25</span>+</h2>
-                                <p>Years of experience</p>
+                                <h2><span class="counter">15</span>+</h2>
+                                <p>Années d'expérience</p>
                             </div>
                             <!-- Why Choose Counters Item End -->
                             
                             <!-- Why Choose Counters Item Start -->
                             <div class="why-choose-counter-item">
-                                <h2><span class="counter">230</span>+</h2>
-                                <p>Thousands volunteers</p>
+                                <h2><span class="counter">150</span>+</h2>
+                                <p>Partenaires locaux</p>
                             </div>
                             <!-- Why Choose Counters Item End -->
                             
                             <!-- Why Choose Counters Item Start -->
                             <div class="why-choose-counter-item">
-                                <h2><span class="counter">400</span>+</h2>
-                                <p>Word wide office</p>
+                                <h2><span class="counter">55000</span>+</h2>
+                                <p>Clients satisfaits</p>
                             </div>
                             <!-- Why Choose Counters Item End -->
                         </div>
@@ -309,32 +328,35 @@
                 </div>
             </div>
         </div>
-   </div>
-   <!-- Why Choose Us Section End -->
+    </div>
+    <!-- Why Choose Us Section End -->
+
 
     <!-- Scrolling Ticker Start -->
-    <div class="scrolling-ticker">
+    <div class="scrolling-ticker" style="padding-bottom: 50px;">
+        <h2 class="section-title" style="text-align: center;">Nos Prix</h2>
         <div class="scrolling-ticker-box">
             <div class="scrolling-content">
-                <span><img src="images/icon-asterisk.svg" alt="">Health Support</span>
-                <span><img src="images/icon-asterisk.svg" alt="">Education Support</span>
-                <span><img src="images/icon-asterisk.svg" alt="">Food Support</span>
-                <span><img src="images/icon-asterisk.svg" alt="">Health Support</span>
-                <span><img src="images/icon-asterisk.svg" alt="">Education Support</span>
-                <span><img src="images/icon-asterisk.svg" alt="">Food Support</span>
+                <span><img src=""> Prix d'Excellence en Agriculture</span>
+                <span><img src=""> Trophée de l'Innovation Agroalimentaire</span>
+                <span><img src=""> Prix du Développement Durable</span>
+                <span><img src=""> Prix du Meilleur Partenaire Local</span>
+                <span><img src=""> Prix de la Qualité et de l'Engagement</span>
+                <span><img src=""> Prix du Commerce Équitable</span>
             </div>
 
             <div class="scrolling-content">
-                <span><img src="images/icon-asterisk.svg" alt="">Health Support</span>
-                <span><img src="images/icon-asterisk.svg" alt="">Education Support</span>
-                <span><img src="images/icon-asterisk.svg" alt="">Food Support</span>
-                <span><img src="images/icon-asterisk.svg" alt="">Health Support</span>
-                <span><img src="images/icon-asterisk.svg" alt="">Education Support</span>
-                <span><img src="images/icon-asterisk.svg" alt="">Food Support</span>
+                <span><img src=""> Prix d'Excellence en Agriculture</span>
+                <span><img src=""> Trophée de l'Innovation Agroalimentaire</span>
+                <span><img src=""> Prix du Développement Durable</span>
+                <span><img src=""> Prix du Meilleur Partenaire Local</span>
+                <span><img src=""> Prix de la Qualité et de l'Engagement</span>
+                <span><img src=""> Prix du Commerce Équitable</span>
             </div>
         </div>
     </div>
-	<!-- Scrolling Ticker End -->
+    <!-- Scrolling Ticker End -->
+
 
     <!-- Our Testimonials Section Start -->
     <div class="our-testimonials">
@@ -349,9 +371,9 @@
                             </figure>
                         </div>
 
-                        <div class="client-review-box">
-                            <h2><span class="counter">20</span>k</h2>
-                            <p>customer review</p>
+                        <div class="client-review-box"><p>Plus de</p>
+                            <h2> <span class="counter">550</span>k</h2>
+                            <p>de clients fidèles</p>
                         </div> 
                     </div>
                     <!-- Testimonials Image End -->
@@ -362,156 +384,112 @@
                     <div class="testimonials-content">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp">testimonials</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">What people say about us</h2>
+                            <h3 class="wow fadeInUp">Témoignages</h3>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque">Ce que les gens disent de nous</h2>
                         </div>
                         <!-- Section Title End -->
 
                         <!-- Testimonial Slider Start -->
                         <div class="testimonial-slider">
                             <div class="swiper">
-                                <div class="swiper-wrapper" data-cursor-text="Drag">
-                                    <!-- Testimonial Slide Start -->
-                                    <div class="swiper-slide">
-                                        <!-- Testimonial Item Start -->
-                                        <div class="testimonial-item">
-                                            <!-- Testimonial Header Start -->
-                                            <div class="testimonial-header">
-                                                <!-- Author Info Start -->
-                                                <div class="author-info">
-                                                    <!-- Author Image Start -->
-                                                    <div class="author-image">
-                                                        <figure class="image-anime">
-                                                            <img src="images/author-1.jpg" alt="">
-                                                        </figure>
-                                                    </div>    
-                                                    <!-- Author Image End -->
-
-                                                    <!-- Author Content Start -->
-                                                    <div class="author-content">
-                                                        <h3>eleanor pena</h3>
-                                                        <p>volunteer coordinator</p>
-                                                    </div>
-                                                    <!-- Author Content End -->
+                            <div class="swiper-wrapper" data-cursor-text="Balayer">
+                                <!-- Témoignage 1 -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-header">
+                                            <div class="author-info">
+                                                <div class="author-image">
+                                                    <figure class="image-anime">
+                                                        <img src="images/mission.jpeg" alt="Amadou Diallo">
+                                                    </figure>
+                                                </div>    
+                                                <div class="author-content">
+                                                    <h3>Amadou Diallo</h3>
+                                                    <p>Entrepreneur</p>
                                                 </div>
-                                                <!-- Author Info Author End -->
-                                                
-                                                <!-- Testimonial Rating Start -->
-                                                <div class="testimonial-rating">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <!-- Testimonial Rating End -->
                                             </div>
-                                            <!-- Testimonial Header End -->
-                                            
-                                            <!-- Testimonial Content Start -->
-                                            <div class="testimonial-content">
-                                                <p>"Working with [NGO Name] has been a truly inspiring experience. Their dedication to uplifting communities and creating sustainable change is unmatched. Through their programs, I've seen lives transformed and hope restored"</p>
+                                            <div class="testimonial-rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
                                             </div>
-                                            <!-- Testimonial Content End -->
                                         </div>
-                                        <!-- Testimonial Item End -->
-                                    </div>
-                                    <!-- Testimonial Slide End -->
-
-                                    <!-- Testimonial Slide Start -->
-                                    <div class="swiper-slide">
-                                        <!-- Testimonial Item Start -->
-                                        <div class="testimonial-item">
-                                            <!-- Testimonial Header Start -->
-                                            <div class="testimonial-header">
-                                                <!-- Author Info Start -->
-                                                <div class="author-info">
-                                                    <!-- Author Image Start -->
-                                                    <div class="author-image">
-                                                        <figure class="image-anime">
-                                                            <img src="images/author-2.jpg" alt="">
-                                                        </figure>
-                                                    </div>    
-                                                    <!-- Author Image End -->
-
-                                                    <!-- Author Content Start -->
-                                                    <div class="author-content">
-                                                        <h3>michael carter</h3>
-                                                        <p>program manager</p>
-                                                    </div>
-                                                    <!-- Author Content End -->
-                                                </div>
-                                                <!-- Author Info Author End -->
-                                                
-                                                <!-- Testimonial Rating Start -->
-                                                <div class="testimonial-rating">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <!-- Testimonial Rating End -->
-                                            </div>
-                                            <!-- Testimonial Header End -->
-                                            
-                                            <!-- Testimonial Content Start -->
-                                            <div class="testimonial-content">
-                                                <p>"Working with [NGO Name] has been a truly inspiring experience. Their dedication to uplifting communities and creating sustainable change is unmatched. Through their programs, I've seen lives transformed and hope restored"</p>
-                                            </div>
-                                            <!-- Testimonial Content End -->
+                                        <div class="testimonial-content">
+                                            <p>"Depuis que j'ai découvert cette entreprise, ma vision de la consommation locale a totalement changé. 
+                                            Les produits sont d'une qualité irréprochable et le service client est toujours disponible pour répondre à mes questions. 
+                                            Je recommande vivement à toute personne soucieuse de consommer des produits sains et naturels."</p>
                                         </div>
-                                        <!-- Testimonial Item End -->
                                     </div>
-                                    <!-- Testimonial Slide End -->
-
-                                    <!-- Testimonial Slide Start -->
-                                    <div class="swiper-slide">
-                                        <!-- Testimonial Item Start -->
-                                        <div class="testimonial-item">
-                                            <!-- Testimonial Header Start -->
-                                            <div class="testimonial-header">
-                                                <!-- Author Info Start -->
-                                                <div class="author-info">
-                                                    <!-- Author Image Start -->
-                                                    <div class="author-image">
-                                                        <figure class="image-anime">
-                                                            <img src="images/author-3.jpg" alt="">
-                                                        </figure>
-                                                    </div>    
-                                                    <!-- Author Image End -->
-
-                                                    <!-- Author Content Start -->
-                                                    <div class="author-content">
-                                                        <h3>sophi martinez</h3>
-                                                        <p>communications director</p>
-                                                    </div>
-                                                    <!-- Author Content End -->
-                                                </div>
-                                                <!-- Author Info Author End -->
-                                                
-                                                <!-- Testimonial Rating Start -->
-                                                <div class="testimonial-rating">
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                    <i class="fa-solid fa-star"></i>
-                                                </div>
-                                                <!-- Testimonial Rating End -->
-                                            </div>
-                                            <!-- Testimonial Header End -->
-                                            
-                                            <!-- Testimonial Content Start -->
-                                            <div class="testimonial-content">
-                                                <p>"Working with [NGO Name] has been a truly inspiring experience. Their dedication to uplifting communities and creating sustainable change is unmatched. Through their programs, I've seen lives transformed and hope restored"</p>
-                                            </div>
-                                            <!-- Testimonial Content End -->
-                                        </div>
-                                        <!-- Testimonial Item End -->
-                                    </div>
-                                    <!-- Testimonial Slide End -->
                                 </div>
+
+                                <!-- Témoignage 2 -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-header">
+                                            <div class="author-info">
+                                                <div class="author-image">
+                                                    <figure class="image-anime">
+                                                        <img src="images/mission.jpeg" alt="Awa Koné">
+                                                    </figure>
+                                                </div>    
+                                                <div class="author-content">
+                                                    <h3>Awa Koné</h3>
+                                                    <p>Commerçante</p>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial-rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star-half-alt"></i>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-content">
+                                            <p>"En tant que commerçante, j'ai toujours recherché des fournisseurs fiables. 
+                                            Grâce à eux, j'ai pu améliorer la qualité de mes produits et fidéliser ma clientèle. 
+                                            Leurs produits sont frais et leurs délais de livraison respectés, ce qui est essentiel pour mon activité. 
+                                            Merci pour votre professionnalisme et votre engagement envers la qualité."</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Témoignage 3 -->
+                                <div class="swiper-slide">
+                                    <div class="testimonial-item">
+                                        <div class="testimonial-header">
+                                            <div class="author-info">
+                                                <div class="author-image">
+                                                    <figure class="image-anime">
+                                                        <img src="images/mission.jpeg" alt="Kwame Mensah">
+                                                    </figure>
+                                                </div>    
+                                                <div class="author-content">
+                                                    <h3>Kwame Mensah</h3>
+                                                    <p>Consultant</p>
+                                                </div>
+                                            </div>
+                                            <div class="testimonial-rating">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                        <div class="testimonial-content">
+                                            <p>"Ce qui m'a impressionné, c'est la transparence et l'éthique de cette entreprise. 
+                                            Ils mettent un point d'honneur à offrir des produits de qualité et à soutenir les producteurs locaux. 
+                                            En tant que consultant, j'ai souvent affaire à des entreprises qui ne tiennent pas toujours leurs promesses, 
+                                            mais ici, j'ai trouvé un partenaire fiable et engagé. Bravo pour cette belle initiative !"</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                                 <div class="testimonial-pagination"></div>
                             </div>
                         </div>

@@ -1,7 +1,7 @@
 @extends('layouts.site.app')
 
 @section('title')
-  <title> Promo Fruits-Bénin | Actualités </title>
+  <title>Promo Fruits-Bénin | Actualités</title>
 @endsection('title')
 
 @section('styles')
@@ -18,11 +18,11 @@
                 <div class="col-lg-12">
                     <!-- Page Header Box Start -->
                     <div class="page-header-box">
-                        <h1 class="text-anime-style-2" data-cursor="-opaque"><span>Latest</span> blog</h1>
+                        <h1 class="text-anime-style-2" data-cursor="-opaque"><span>Dernière</span> actualité</h1>
                         <nav class="wow fadeInUp">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">blog</li>
+                                <li class="breadcrumb-item"><a href="index.html">accueil</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">actualités</li>
                             </ol>
                         </nav>
                     </div>
@@ -45,14 +45,14 @@
                             <!-- Post Item Tag Start -->
                             <div class="post-item-meta">
                                 <ul>
-                                    <li>10 feb, 2025</li>
+                                    <li>10 fév, 2025</li>
                                 </ul>
                             </div>
                             <!-- Post Item Tag End -->
 
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">Youth Leadership Program Inspires the Next Generation</a></h2>
+                                <h2><a href="/details-article">Le programme de leadership des jeunes inspire la prochaine génération</a></h2>
                             </div>
                             <!-- Post Item Content End -->
                         </div>
@@ -60,9 +60,9 @@
 
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="/details-article" data-cursor-text="Voir">
                                 <figure class="image-anime">
-                                    <img src="images/post-1.jpg" alt="">
+                                    <img src="images/mission.jpeg" alt="">
                                 </figure>
                             </a>
                         </div>
@@ -70,7 +70,7 @@
                         
                         <!-- Blog Item Button Start -->
                         <div class="blog-item-btn">
-                            <a href="blog-single.html" class="readmore-btn">read more</a>
+                            <a href="/details-article" class="readmore-btn">Lire la suite</a>
                         </div>
                         <!-- Blog Item Button End -->
                     </div>
@@ -85,14 +85,14 @@
                             <!-- Post Item Tag Start -->
                             <div class="post-item-meta">
                                 <ul>
-                                    <li>07 feb, 2025</li>
+                                    <li>07 fév, 2025</li>
                                 </ul>
                             </div>
                             <!-- Post Item Tag End -->
 
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">Protecting Forests, Futures Our Environmental Mission</a></h2>
+                                <h2><a href="/details-article">Protéger les forêts, un avenir pour notre mission environnementale</a></h2>
                             </div>
                             <!-- Post Item Content End -->
                         </div>
@@ -100,9 +100,9 @@
 
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="/details-article" data-cursor-text="Voir">
                                 <figure class="image-anime">
-                                    <img src="images/post-2.jpg" alt="">
+                                    <img src="images/mission.jpeg" alt="">
                                 </figure>
                             </a>
                         </div>
@@ -110,7 +110,7 @@
                         
                         <!-- Blog Item Button Start -->
                         <div class="blog-item-btn">
-                            <a href="blog-single.html" class="readmore-btn">read more</a>
+                            <a href="/details-article" class="readmore-btn">Lire la suite</a>
                         </div>
                         <!-- Blog Item Button End -->
                     </div>
@@ -125,14 +125,14 @@
                             <!-- Post Item Tag Start -->
                             <div class="post-item-meta">
                                 <ul>
-                                    <li>04 feb, 2025</li>
+                                    <li>04 fév, 2025</li>
                                 </ul>
                             </div>
                             <!-- Post Item Tag End -->
 
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">Partnering for Collaborative Impact Stories</a></h2>
+                                <h2><a href="/details-article">S'associer pour un impact collaboratif : Histoires de partenariat</a></h2>
                             </div>
                             <!-- Post Item Content End -->
                         </div>
@@ -140,9 +140,9 @@
 
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="/details-article" data-cursor-text="Voir">
                                 <figure class="image-anime">
-                                    <img src="images/post-3.jpg" alt="">
+                                    <img src="images/mission.jpeg" alt="">
                                 </figure>
                             </a>
                         </div>
@@ -150,7 +150,7 @@
                         
                         <!-- Blog Item Button Start -->
                         <div class="blog-item-btn">
-                            <a href="blog-single.html" class="readmore-btn">read more</a>
+                            <a href="/details-article" class="readmore-btn">Lire la suite</a>
                         </div>
                         <!-- Blog Item Button End -->
                     </div>
@@ -165,14 +165,14 @@
                             <!-- Post Item Tag Start -->
                             <div class="post-item-meta">
                                 <ul>
-                                    <li>01 feb, 2025</li>
+                                    <li>01 fév, 2025</li>
                                 </ul>
                             </div>
                             <!-- Post Item Tag End -->
 
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">Advocacy in Action Creating Policy Changes for Good</a></h2>
+                                <h2><a href="/details-article">Plaidoyer en action : Créer des changements de politique pour le bien</a></h2>
                             </div>
                             <!-- Post Item Content End -->
                         </div>
@@ -180,9 +180,9 @@
 
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="/details-article" data-cursor-text="Voir">
                                 <figure class="image-anime">
-                                    <img src="images/post-4.jpg" alt="">
+                                    <img src="images/mission.jpeg" alt="">
                                 </figure>
                             </a>
                         </div>
@@ -190,7 +190,7 @@
                         
                         <!-- Blog Item Button Start -->
                         <div class="blog-item-btn">
-                            <a href="blog-single.html" class="readmore-btn">read more</a>
+                            <a href="/details-article" class="readmore-btn">Lire la suite</a>
                         </div>
                         <!-- Blog Item Button End -->
                     </div>
@@ -212,7 +212,7 @@
 
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">How Education Transforms Lives and Futures</a></h2>
+                                <h2><a href="/details-article">Comment l'éducation transforme les vies et les avenirs</a></h2>
                             </div>
                             <!-- Post Item Content End -->
                         </div>
@@ -220,9 +220,9 @@
 
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="/details-article" data-cursor-text="Voir">
                                 <figure class="image-anime">
-                                    <img src="images/post-5.jpg" alt="">
+                                    <img src="images/mission.jpeg" alt="">
                                 </figure>
                             </a>
                         </div>
@@ -230,7 +230,7 @@
                         
                         <!-- Blog Item Button Start -->
                         <div class="blog-item-btn">
-                            <a href="blog-single.html" class="readmore-btn">read more</a>
+                            <a href="/details-article" class="readmore-btn">Lire la suite</a>
                         </div>
                         <!-- Blog Item Button End -->
                     </div>
@@ -252,7 +252,7 @@
 
                             <!-- Post Item Content Start -->
                             <div class="post-item-content">
-                                <h2><a href="blog-single.html">Why Healthcare Access Matters for Everyone</a></h2>
+                                <h2><a href="/details-article">Pourquoi l'accès aux soins de santé est essentiel pour tous</a></h2>
                             </div>
                             <!-- Post Item Content End -->
                         </div>
@@ -260,9 +260,9 @@
 
                         <!-- Post Featured Image Start-->
                         <div class="post-featured-image">
-                            <a href="blog-single.html" data-cursor-text="View">
+                            <a href="/details-article" data-cursor-text="Voir">
                                 <figure class="image-anime">
-                                    <img src="images/post-6.jpg" alt="">
+                                    <img src="images/mission.jpeg" alt="">
                                 </figure>
                             </a>
                         </div>
@@ -270,7 +270,7 @@
                         
                         <!-- Blog Item Button Start -->
                         <div class="blog-item-btn">
-                            <a href="blog-single.html" class="readmore-btn">read more</a>
+                            <a href="/details-article" class="readmore-btn">Lire la suite</a>
                         </div>
                         <!-- Blog Item Button End -->
                     </div>

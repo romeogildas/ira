@@ -23,8 +23,8 @@
 								</li>
 								<li class="nav-item submenu"><a class="nav-link" href="javascript:void(0);">Nos Produits</a>
                                     <ul>
-                                        <li class="nav-item"><a class="nav-link" href="/product">Les Jus IRA</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/product">Les Jus Govié</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/ira">Les Jus IRA</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/govie">Les Jus Govié</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item"><a class="nav-link" href="/faq">FAQ</a></li>

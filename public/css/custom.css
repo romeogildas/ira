@@ -48,7 +48,7 @@
 /************************************/	
 
 :root{
-	--primary-color			: #4CAF50;
+	--primary-color			: #426443;
 	--secondary-color		: #F8F8F8;
 	--text-color			: #828282;
 	--accent-color			: #FBC02D;
@@ -2812,7 +2812,7 @@ header.main-header .header-sticky.active{
 
 .our-approach{
 	padding: 100px 0;
-	background: url('../images/our-service-bg.svg'), var(--secondary-color);
+	background: var(--secondary-color);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: auto;
@@ -3443,7 +3443,7 @@ header.main-header .header-sticky.active{
 
 .sidebar-cta-box{
 	position: relative;
-	background-image: url(../images/sidebar-cta-bg-img.jpg);
+	background-image: url(../images/mission.jpeg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;

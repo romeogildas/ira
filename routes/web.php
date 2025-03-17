@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,13 +30,21 @@ Route::get('/partenaires', function () {
     return view('partenaires');
 })->name('partenaires');
 
-Route::get('/product', function () {
-    return view('product');
-})->name('product');
+Route::get('/ira', function () {
+    return view('productIra');
+})->name('ira');
+
+Route::get('/govie', function () {
+    return view('productGovie');
+})->name('govie');
 
 Route::get('/article', function () {
     return view('article');
 })->name('article');
+
+Route::get('/details-article', function () {
+    return view('details-article');
+})->name('details-article');
 
 Route::get('/faq', function () {
     return view('faq');

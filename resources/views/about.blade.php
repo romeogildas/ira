@@ -4,8 +4,80 @@
 @endsection('title')
 
 @section('styles')
-  <style>
-  </style>
+    <style>
+        .service-entry p {
+            text-align: justify;
+            text-justify: inter-word;
+            word-spacing: 2px;
+            line-height: 1.6;
+        }
+
+        .mission-vision-content p {
+            display: inline;
+        }
+
+        .read-more-btn {
+            color: #e67e22; 
+            cursor: pointer;
+            text-decoration: underline;
+            margin-left: 5px;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .read-more-btn:hover {
+            color: #d35400; 
+        }
+
+        .popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background: #fffaf0; 
+            padding: 20px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            z-index: 1000;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .popup h3 {
+            margin-top: 0;
+            color: #27ae60; 
+        }
+
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); 
+            z-index: 999;
+        }
+
+        .close-btn {
+            background: #2ecc71; 
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .close-btn:hover {
+            background: #27ae60; 
+        }
+        
+
+    </style>
 @endsection('styles')
 
 @section('content')
@@ -32,226 +104,154 @@
     </div>
     <!-- Page Header End -->
 
-    <!-- About Us Section Start -->
-    <div class="about-us">
+    <!-- Page Service Single Start -->
+    <div class="page-service-single">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <!-- About Us Images Start -->
-                    <div class="about-us-images">
-                        <!-- About Image 1 Start -->
-                        <div class="about-img-1">
-                            <figure class="image-anime">
-                                <img src="images/about-img-1.jpg" alt="">
-                            </figure>
-                        </div>
-                        <!-- About Image 1 End -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <!-- Page Single Sidebar Start -->
+                    <div class="page-single-sidebar">
+                        <!-- Page Sidebar Category List Start -->
+                        <div class="page-sidebar-catagery-list wow fadeInUp">
+                            
+                            <!-- Sidebar CTA Box Start -->
+                            <div class="sidebar-cta-box wow fadeInUp" data-wow-delay="0.2s">
+                                <!-- Cta Content Start -->
+                                <div class="icon-box">
+                                    <img src="images/icon-cta.svg" alt="">
+                                </div>
+                                
+                                <!-- Sidebar CTA Content Start -->
+                                <div class="sidebar-cta-content">
+                                <p><strong>Promo Fruits Bénin</strong> en un mot</p>
 
-                        <!-- About Image 2 Start -->
-                        <div class="about-img-2">
-                            <figure class="image-anime">
-                                <img src="images/about-img-2.jpg" alt="">
-                            </figure>
+                                </div>
+                                <!-- Sidebar CTA Content End -->
+                                
+                                <!-- Sidebar CTA Button Start -->
+                                <div class="sidebar-cta-btn">
+                                    <a href="/contact" class="btn-default">Contactez-nous</a>
+                                </div>
+                                <!-- Sidebar CTA Button End -->
+                            </div>
+                            <!-- Sidebar CTA Box End -->
                         </div>
-                        <!-- About Image 2 End -->
+                        <!-- Page Sidebar Category List End -->
 
-                        <!-- Need Fund Box Start -->
-                        <div class="need-fund-box">
-                            <img src="images/icon-funded-dollar.svg" alt="">
-                            <p>We've funded <span class="counter">75</span>k Dollars</p>
-                        </div>
-                        <!-- Need Fund Box End -->
                     </div>
-                    <!-- About Us Images End -->
+                    <!-- Page Single Sidebar End -->
                 </div>
 
-                <div class="col-lg-6">
-                    <!-- About Us Content Start -->
-                    <div class="about-us-content">
-                        <!-- Section Title Start -->
-                        <div class="section-title">
-                            <h3 class="wow fadeInUp">about us</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">United in compassion, changing lives</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.2s">Driven by compassion and a shared vision, we work hand-in-hand with communities to create meaningful change.</p>
-                        </div>
-                        <!-- Section Title End -->
+                <div class="col-lg-8">
+                    <!-- Service Single Content Start -->
+                    <div class="service-single-contemt">
 
-                        <!-- About Body Start -->
-                        <div class="about-us-body">
-                            <div class="about-us-body-content">
-                                <!-- About Support Box Start -->
-                                <div class="about-support-box wow fadeInUp" data-wow-delay="0.4s">
-                                    <div class="icon-box">
-                                        <img src="images/icon-about-support.svg" alt="">
-                                    </div>
-                                    <!-- About Support Content Start -->
-                                    <div class="about-support-content">
-                                        <h3>Healthcare Support</h3>
-                                        <p>Providing essential healthcare services and resources to communities.</p>
-                                    </div>
-                                    <!-- About Support Content End -->
-                                </div>
-                                <!-- About Support Box End -->
-                                
-                                <!-- About Button Start -->
-                                <div class="about-btn wow fadeInUp" data-wow-delay="0.6s">
-                                    <a href="donation.html" class="btn-default">donate now</a>
-                                </div>
-                                <!-- About Button End -->
-                            </div>
+                        <!-- Service Entry Start -->
+                        <div class="service-entry">
+                            <p class="wow fadeInUp">Bienvenue dans l’avenir que nous travaillons à bâtir ensemble avec nos partenaires agriculteurs. Notre dynamique dans l’univers <strong>Promo Fruits</strong> est de faire de chaque producteur travaillant fidèlement avec nous, un agriculteur qui vit pleinement de ses efforts. Dans notre vison de partenariat, nos décisions et perspectives sont prises pour assurer un futur où ensemble et graduellement nous bâtissons un avenir prospère. Pour Promo Fruit chaque producteur ayant choisi de travailler avec nous est un allié, et pour cela nous mettons tout en œuvre pour lui assurer une récolte saine et conséquente. Nos techniciens sont présents aux côtés de chaque producteur sur le terrain pour veiller à une saison de récolte fructueuse et nous demeurons à votre écoute à chaque étape de croissances jusqu’à ce que nous réceptionnons les fruits de votre production dans nos entrepôts. Dans notre vision, vous êtes un précieux partenaire.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.2s">Nous sommes la marque du fruit pressé et pour tenir cette ligne de conduite, <strong>Promo Fruits</strong> veille à vos côtés à obtenir des fruits mûrs et juteux. <strong>Promo Fruits</strong> ayant à cœur de faire bénéficier le maximum de producteurs, nous œuvrons à travers des producteurs agriculteurs sérieux fédérer en association afin de leur rendre toutes les ressources nécessaires à la production disponible. Nos années d’expériences et la multitude de possibilités que nous offrons particulièrement à chaque producteur agriculteur fait de nous le meilleur garant pour une saison réussie. Nous en avons l’expérience, la méthode et les moyens dont vous voyez les photos.</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.3s">Voici les explications de notre Directeur Général sur comment devenir un producteur agriculteur affilié à <strong>Promo Fruit</strong>, les lignes de notre engagement envers vous et les obligations que nous attendons dans notre relation mutuelle de croissance.</p>
 
-                            <!-- Helped Fund Item Start -->
-                            <div class="helped-fund-item">
-                                <div class="helped-fund-img">
-                                    <figure class="image-anime">
-                                        <img src="images/helped-fund-img.jpg" alt="">
-                                    </figure>
-                                </div>
-                                <div class="helped-fund-content">
-                                    <h2><span class="counter">75,958</span></h2>
-                                    <h3>helped fund</h3>
-                                    <p>Supporting growth through community- funding.</p>
-                                </div>
-                            </div>
-                            <!-- Helped Fund Item End -->
                         </div>
-                        <!-- About Body End -->
+                        <!-- Service Entry End -->
+
                     </div>
-                    <!-- About Us Content End -->
+                    <!-- Service Single Content End -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- About Us Section End -->
+    <!-- Page Service Single End -->
 
-    <!-- Our Approah Section Start -->
+
+    <!-- Page Contact Us Start -->
     <div class="our-approach">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <!-- Our Approach Box Content Start -->
-                    <div class="our-approach-box-content">
-                        <!-- Our Approach Content Start -->
-                        <div class="our-approach-content">
-                            <!-- Section Title Start -->
-                            <div class="section-title">
-                                <h3 class="wow fadeInUp">our approach</h3>
-                                <h2 class="text-anime-style-2" data-cursor="-opaque">Compassionate solutions for lasting impact</h2>
-                                <p class="wow fadeInUp" data-wow-delay="0.2s">Our approach focuses on creating sustainable change by addressing root causes, empowering communities, and delivering compassionate solutions.</p>
+                    <!-- Contact Info Box Start -->
+                    <div class="contact-info-box">
+                        <!-- Contact Info Item Start -->
+                        <div class="contact-info-item wow fadeInUp">
+                            <div class="icon-box">
+                                <img src="images/icon-our-mission.svg" alt="">
                             </div>
-                            <!-- Section Title End -->
-
-                            <!-- Our Approach Button Start -->
-                            <div class="our-approach-btn wow fadeInUp" data-wow-delay="0.4s">
-                                <a href="" class="btn-default">Lire plus</a>
+                            <div class="contact-info-content">
+                                <h3>Notre mission</h3>
+                                <p id="short-mission"></p>
+                                <span class="readmore-btn" onclick="showPopup('mission')">Lire plus</span>
                             </div>
-                            <!-- Our Approach Button End -->
+                        </div>
+                        <!-- Contact Info Item End -->
 
-                            <!-- Mission Vision Box Start -->
-                            <div class="mission-vision-box wow fadeInUp" data-wow-delay="0.6s">
-                                <!-- Mission Vision Item Start -->
-                                <div class="mission-vision-item">
-                                    <div class="icon-box">
-                                        <img src="images/icon-our-mission.svg" alt="">
-                                    </div>
-
-                                    <div class="mission-vision-content">
-                                        <h3>Notre mission</h3>
-                                        <p id="short-text"></p>
-                                        <span class="readmore-btn" onclick="showPopup()"></span>
-                                    </div>
-
-                                    <div class="popup-overlay" id="popup-overlay"></div>
-                                    <div class="popup" id="popup">
-                                        <button class="close-btn" onclick="closePopup()">X</button>
-                                        <h3>Notre mission</h3>
-                                        <p id="full-text"></p>
-                                    </div>
-                                </div>
-                                <!-- Mission Vision Item End -->
-
-                                <!-- Mission Vision Item Start -->
-                                <div class="mission-vision-item">
-                                    <div class="icon-box">
-                                        <img src="images/icon-our-vision.svg" alt="">
-                                    </div>
-
-                                    <div class="mission-vision-content">
-                                        <h3>our vision</h3>
-                                        <p>We strive to create positive change, empower.</p>
-                                    </div>
-                                </div>
-                                <!-- Mission Vision Item End -->
-
-                                <!-- Mission Vision Item Start -->
-                                <div class="mission-vision-item">
-                                    <div class="icon-box">
-                                        <img src="images/icon-our-value.svg" alt="">
-                                    </div>
-
-                                    <div class="mission-vision-content">
-                                        <h3>our value</h3>
-                                        <p>We strive to create positive change, empower.</p>
-                                    </div>
-                                </div>
-                                <!-- Mission Vision Item End -->
+                        <!-- Contact Info Item Start -->
+                        <div class="contact-info-item wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="icon-box">
+                                <img src="images/icon-our-vision.svg" alt="">
                             </div>
+                            <div class="contact-info-content">
+                                <h3>Notre vision</h3>
+                                <p id="short-vision"></p>
+                                <span class="readmore-btn" onclick="showPopup('vision')">Lire plus</span>
+                            </div>
+                        </div>
+                        <!-- Contact Info Item End -->
+
+                        <!-- Contact Info Item Start -->
+                        <div class="contact-info-item wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="icon-box">
+                                <img src="images/icon-our-value.svg" alt="">
+                            </div>
+                            <div class="contact-info-content">
+                                <h3>Nos valeurs</h3>
+                                <p id="short-values"></p>
+                                <span class="readmore-btn" onclick="showPopup('values')">Lire plus</span>
+                            </div>
+                        </div>
+                        <!-- Contact Info Item End -->
+                         <!-- Popup Section -->
+                        <div class="popup-overlay" id="popup-overlay"></div>
+                        <div class="popup" id="popup">
+                            <button class="close-btn" onclick="closePopup()">X</button>
+                            <h3 id="popup-title"></h3>
+                            <p id="popup-text"></p>
+                        </div>
                             <!-- Mission Vision Box End -->
-                        </div>
-                        <!-- Our Approach Content End -->
-
-                        <!-- Our Approach Image Start -->
-                        <div class="our-approach-image">
-                            <figure class="image-anime">
-                                <img src="images/mission.jpeg" alt="">
-                            </figure>
-                        </div>
-                        <!-- Our Approach Image End -->
                     </div>
-                    <!-- Our Approach Box Content End -->
+                    <!-- Contact Info Box End -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- Our Approah Section End -->
+    <!-- Page Contact Us End -->
 
-    <!-- Our Team Section Start -->
+    <!-- Début de la section Notre Équipe -->
     <div class="our-team">
         <div class="container">
             <div class="row section-row">
                 <div class="col-lg-12">
-                    <!-- Section Title Start -->
+                    <!-- Début du titre de la section -->
                     <div class="section-title">
                         <h3 class="wow fadeInUp">Notre équipe</h3>
-                        <h2 class="text-anime-style-2" data-cursor="-opaque">Dedicated hearts behind our mission</h2>
-                        <p class="wow fadeInUp" data-wow-delay="0.2s">Meet the passionate individuals driving our mission forward, committed to creating meaningful change and building a brighter future for all.</p>
+                        <h2 class="text-anime-style-2" data-cursor="-opaque">Les cœurs dévoués derrière notre mission</h2>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s">Rencontrez les individus passionnés qui portent notre mission, engagés à créer un changement significatif et à bâtir un avenir meilleur pour tous.</p>
                     </div>
-                    <!-- Section Title End -->
+                    <!-- Fin du titre de la section -->
                 </div>
             </div>
 
             <div class="row">
                 <div class="col-lg-3 col-md-6">
-                    <!-- Team Item Start -->
                     <div class="team-item wow fadeInUp">
-                        <!-- Team Image Start -->
                         <div class="team-image">
-                            <a href="team-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/team.jpeg" alt="">
-                                </figure>
-                            </a>
-                        </div>	
-                        <!-- Team Image End -->
-
-                        <!-- Team Content Start -->
+                            <figure class="image-anime">
+                                <img src="images/team.jpeg" alt="Photo de Chris tchrist">
+                            </figure>
+                        </div>    
                         <div class="team-content">
-                            <h3><a href="team-single.html">Chris tchrist</a></h3>
+                            <h3>Chris Tchrist</h3>
                             <p>Directeur</p>
                         </div>
-                        <!-- Team Content End -->
-                        
-                        <!-- Team Social Icon Start -->
                         <div class="team-social-icon">
                             <ul>
                                 <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
@@ -259,32 +259,20 @@
                                 <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                             </ul>
                         </div>
-                        <!-- Team Social Icon End -->
                     </div>
-                    <!-- Team Item Start -->
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <!-- Team Item Start -->
                     <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
-                        <!-- Team Image Start -->
                         <div class="team-image">
-                            <a href="team-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/team.jpeg" alt="">
-                                </figure>
-                            </a>
-                        </div>	
-                        <!-- Team Image End -->
-
-                        <!-- Team Content Start -->
+                            <figure class="image-anime">
+                                <img src="images/team.jpeg" alt="Photo de Sophie Sophie">
+                            </figure>
+                        </div>    
                         <div class="team-content">
-                            <h3><a href="team-single.html">Sophie sophie</a></h3>
-                            <p>Directrice com</p>
+                            <h3>Sophie Sophie</h3>
+                            <p>Directrice communication</p>
                         </div>
-                        <!-- Team Content End -->
-                        
-                        <!-- Team Social Icon Start -->
                         <div class="team-social-icon">
                             <ul>
                                 <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
@@ -292,32 +280,20 @@
                                 <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                             </ul>
                         </div>
-                        <!-- Team Social Icon End -->
                     </div>
-                    <!-- Team Item Start -->
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <!-- Team Item Start -->
                     <div class="team-item wow fadeInUp" data-wow-delay="0.4s">
-                        <!-- Team Image Start -->
                         <div class="team-image">
-                            <a href="team-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/team.jpeg" alt="">
-                                </figure>
-                            </a>
-                        </div>	
-                        <!-- Team Image End -->
-
-                        <!-- Team Content Start -->
+                            <figure class="image-anime">
+                                <img src="images/team.jpeg" alt="Photo de Roméo Roméo">
+                            </figure>
+                        </div>    
                         <div class="team-content">
-                            <h3><a href="team-single.html">Roméo romeo</a></h3>
-                            <p>Ingenieur web</p>
+                            <h3>Roméo Roméo</h3>
+                            <p>Ingénieur web</p>
                         </div>
-                        <!-- Team Content End -->
-                        
-                        <!-- Team Social Icon Start -->
                         <div class="team-social-icon">
                             <ul>
                                 <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
@@ -325,32 +301,20 @@
                                 <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                             </ul>
                         </div>
-                        <!-- Team Social Icon End -->
                     </div>
-                    <!-- Team Item Start -->
                 </div>
 
                 <div class="col-lg-3 col-md-6">
-                    <!-- Team Item Start -->
-                    <div class="team-item wow fadeInUp"  data-wow-delay="0.6s">
-                        <!-- Team Image Start -->
+                    <div class="team-item wow fadeInUp" data-wow-delay="0.6s">
                         <div class="team-image">
-                            <a href="team-single.html" data-cursor-text="View">
-                                <figure class="image-anime">
-                                    <img src="images/team.jpeg" alt="">
-                                </figure>
-                            </a>
-                        </div>	
-                        <!-- Team Image End -->
-
-                        <!-- Team Content Start -->
+                            <figure class="image-anime">
+                                <img src="images/team.jpeg" alt="Photo de Alix Alix">
+                            </figure>
+                        </div>    
                         <div class="team-content">
-                            <h3><a href="team-single.html">Alix alix</a></h3>
-                            <p>community manager</p>
+                            <h3>Alix Alix</h3>
+                            <p>Community manager</p>
                         </div>
-                        <!-- Team Content End -->
-                        
-                        <!-- Team Social Icon Start -->
                         <div class="team-social-icon">
                             <ul>
                                 <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
@@ -358,28 +322,50 @@
                                 <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                             </ul>
                         </div>
-                        <!-- Team Social Icon End -->
                     </div>
-                    <!-- Team Item Start -->
                 </div>
             </div>
         </div>
     </div>
-    <!-- Our Team Section End -->
+    <!-- Fin de la section Notre Équipe -->
+
 
 @endsection('content')
 
 @section('scripts')
 <script>
-    const fullText = "Promo Fruit s'est donné comme mission de créer un marché d'écoulement rémunérateur pour chaque type de fruit à travers la transformation à grande échelle. Par ailleurs, nous articulons nos efforts pour l'optimisation des rendements à l'hectare afin d'améliorer le revenu des petits producteurs. Pour chaque consommateur de nos produits, nous garantissons un produit sans additif chimique issu d'une agriculture plus saine et durable pour un bien-être parfait.";
+    const content = {
+        mission: "Promo Fruits s'est donné comme mission de créer un marché d'écoulement rémunérateur pour chaque type de fruit à travers la transformation à grande échelle. Par ailleurs, nous articulons nos efforts pour l'optimisation des rendements à l'hectare afin d'améliorer le revenu des petits producteurs. Pour chaque consommateur de nos produits, nous garantissons un produit sans additif chimique issu d'une agriculture plus saine et durable pour un bien-être parfait.",
+        
+        vision: "Notre vision est de devenir un acteur incontournable dans la valorisation des fruits locaux en Afrique, en offrant des produits sains et naturels à grande échelle. Nous aspirons à un monde où chaque fruit cultivé trouve sa place dans une chaîne de transformation durable, réduisant ainsi le gaspillage et améliorant les conditions de vie des producteurs.",
+        
+        values: "Chez Promo Fruits, nous nous engageons à respecter des valeurs fondamentales : la qualité, l’innovation, l’intégrité et le respect de l’environnement. Nous croyons en une production responsable, en une relation de confiance avec nos partenaires et en une alimentation saine et accessible à tous."
+    };
 
-    const words = fullText.split(" ");
-    const shortText = words.slice(0, 7).join(" ") + "...";
+    function getShortText(text, limit) {
+        // Supprimer la ponctuation et les espaces pour le comptage
+        let cleanText = text.replace(/[^a-zA-ZÀ-ÿ]/g, ""); 
+        let count = 0, result = "";
 
-    document.getElementById("short-text").innerText = shortText;
-    document.getElementById("full-text").innerText = fullText;
+        for (let char of text) {
+            if (/[a-zA-ZÀ-ÿ]/.test(char)) count++; // Compter uniquement les lettres
+            result += char;
+            if (count >= limit) break;
+        }
 
-    function showPopup() {
+        return result + "...";
+    }
+
+    document.getElementById("short-mission").innerText = getShortText(content.mission, 40);
+    document.getElementById("short-vision").innerText = getShortText(content.vision, 40);
+    document.getElementById("short-values").innerText = getShortText(content.values, 40);
+
+    function showPopup(section) {
+        document.getElementById("popup-title").innerText = 
+            section === "mission" ? "Notre mission" :
+            section === "vision" ? "Notre vision" : "Nos valeurs";
+            
+        document.getElementById("popup-text").innerText = content[section];
         document.getElementById("popup").style.display = "block";
         document.getElementById("popup-overlay").style.display = "block";
     }

@@ -130,7 +130,7 @@
 }
 
 .cb-cursor.-text:before {
-	background: #000;
+	background: #4CAF50;
 	opacity: 0.80;
 	backdrop-filter: blur(10);
 	-webkit-transform: scale(1.7);
