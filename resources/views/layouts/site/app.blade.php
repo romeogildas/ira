@@ -15,7 +15,7 @@
 
         @yield('title')
 
-        <link rel="shortcut icon" href="{!!asset('/images/favicon.png')!!}" type="image/x-icon">
+        <link rel="shortcut icon" href="{!!asset('/images/ananas.png')!!}" type="image/x-icon">
 
         <link rel="stylesheet" href="{!!asset('/css/bootstrap.min.css')!!}" media="screen">
         <link rel="stylesheet" href="{!!asset('/css/slicknav.min.css')!!}">
